@@ -1,0 +1,87 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "About Us"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Restaurant_finder": {
+      "type": "string",
+      "required": true,
+      "maxLength": 70,
+      "minLength": 3
+    },
+    "restrau_email": {
+      "type": "email"
+    },
+    "Add_about": {
+      "type": "richtext"
+    },
+    "add_pass": {
+      "type": "password"
+    },
+    "enter_num": {
+      "type": "integer"
+    },
+    "type_of_restrau": {
+      "type": "enumeration",
+      "enum": [
+        "Indian",
+        "chinese",
+        "italian",
+        "french"
+      ]
+    },
+    "enter_data": {
+      "type": "date"
+    },
+    "enter_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Enter_video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "enter_bool": {
+      "type": "boolean",
+      "private": true
+    },
+    "json_value": {
+      "type": "json"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "slug_attached": {
+      "type": "uid",
+      "targetField": "Restaurant_finder"
+    },
+    "component_2": {
+      "displayName": "Component_field",
+      "type": "component",
+      "repeatable": false,
+      "component": "component-value.component-field"
+    }
+  }
+}

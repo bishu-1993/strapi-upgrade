@@ -19,6 +19,9 @@
     "Description": {
       "type": "richtext"
     },
+    "Address": {
+      "type": "richtext"
+    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
